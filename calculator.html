@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+          <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="main"> 
+            <div class="btn-container">
+                <div>
+                    <p id="result">Ready</p>
+                </div>
+              <div class="btn">
+                <button onclick="reset()" type="button"  class="button" id="Reset">Reset</button>
+		        <button onclick="deleteChar()" type="button" class="button" id="Delete">Delete</button>
+                
+                <button onclick="operatorSelect('/')" type="button" class="button" id="division">/</button>
+              </div>
+              <div class="btn">
+                <button onclick="getNumbers('7')"  type="button"  class="button" id="key7">7</button>
+		        <button onclick="getNumbers('8')" type="button" class="button" id="key8">8</button>
+                <button onclick="getNumbers('9')" type="button" class="button" id="key9">9</button>
+                <button onclick="operatorSelect('*')" type="button" class="button" id="multiplication">X</button>
+              </div>
+              <div class="btn">
+                <button onclick="getNumbers('4')" type="button"  class="button" id="key4">4</button>
+		        <button onclick="getNumbers('5')" type="button" class="button" id="key5">5</button>
+                <button onclick="getNumbers('6')" type="button" class="button" id="key6">6</button>
+                <button onclick="operatorSelect('-')" type="button" class="button" id="subtraction">-</button>
+              </div>
+              <div class="btn">
+                <button onclick="getNumbers('1')" type="button"  class="button" id="key1">1</button>
+		        <button onclick="getNumbers('2')" type="button" class="button" id="key2">2</button>
+                <button onclick="getNumbers('3')" type="button" class="button" id="key3">3</button>
+                <button onclick="operatorSelect('+')" type="button" class="button" id="addition">+</button>
+              </div>
+              <div class="btn">
+                <button onclick="getNumbers('.')" type="button"  class="button" id="key.">.</button>
+		        <button onclick="getNumbers('0')" type="button" class="button" id="key0">0</button>
+                <button onclick="operatorSelect('%')" type="button" class="button" id="percent">%</button>
+                <button onclick="equal()" type="button" class="button" id="equal">=</button>
+              </div>
+            </div>
+
+            
+
+        </main>
+        <script src="calculate.js" defer>          
+
+        </script>
+
+    </body>
+</html>
