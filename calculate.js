@@ -23,6 +23,87 @@ function getNumbers(nmb){
 
 
 }
+/* event on keyboard press*/
+document.addEventListener('keydown', function(event){
+
+    var keyPress= event.keyCode;
+    /*console.log(keyPress);*/
+    switch(keyPress){
+        case 8:{
+            deleteChar();
+            break;
+        }
+        case 13:{
+            equal();
+            break;
+        }
+        case 46:{
+            reset();
+            break;
+        }
+        case 107:{
+            operatorSelect('+');
+            break;
+        }
+        case 109:{
+            operatorSelect('-');
+            break;
+        }
+        case 106:{
+            operatorSelect('*');
+            break;
+        }
+        case 111:{
+            operatorSelect('/');
+            break;
+        }
+        
+        case 110:{
+            getNumbers('.');
+            break;
+        }
+        case 96:{
+            getNumbers('0');
+            break;
+        }
+        case 97:{
+            getNumbers('1');
+            break;
+        }
+        case 98:{
+            getNumbers('2');
+            break;
+        }
+        case 99:{
+            getNumbers('3');
+            break;
+        }
+        case 100:{
+            getNumbers('4');
+            break;
+        }
+        case 101:{
+            getNumbers('5');
+            break;
+        }
+        case 102:{
+            getNumbers('6');
+            break;
+        }
+        case 103:{
+            getNumbers('7');
+            break;
+        }
+        case 104:{
+            getNumbers('8');
+            break;
+        }
+        case 105:{
+            getNumbers('9');
+            break;
+        }
+    }
+});
 
 function display(){
     document.getElementById("result").innerHTML = firstNumber+" "+operator+" "+secondNumber;
